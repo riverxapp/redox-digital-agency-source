@@ -1517,28 +1517,29 @@ h6 {
   width: 100%;
   height: 100%;
 }
-.switcher-button-inner i {
+.switcher-button-inner svg {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-size: 20px;
+  width: 20px;
+  height: 20px;
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
-.switcher-button-inner i.icon-light {
+.switcher-button-inner svg.icon-light {
   color: var(--primary);
 }
-.switcher-button-inner i.icon-dark {
+.switcher-button-inner svg.icon-dark {
   transform: translate(-50%, 100%);
   opacity: 0;
   color: var(--white);
 }
 
-body.dark .switcher-button-inner i.icon-light {
+body.dark .switcher-button-inner svg.icon-light {
   transform: translate(-50%, 100%);
   opacity: 0;
 }
-body.dark .switcher-button-inner i.icon-dark {
+body.dark .switcher-button-inner svg.icon-dark {
   transform: translate(-50%, -50%);
   opacity: 1;
 }
