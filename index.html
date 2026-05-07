@@ -22,6 +22,32 @@
 
   <!-- Template Main CSS File -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    body {
+      padding-top: 110px;
+    }
+    .header-area {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9999;
+    }
+    .header__logo a,
+    .offset-logo a {
+      font-size: 36px;
+      line-height: 1;
+    }
+    #home,
+    #about,
+    #services,
+    #portfolio,
+    #team,
+    #blog,
+    #contact {
+      scroll-margin-top: 130px;
+    }
+  </style>
 
 </head>
 
@@ -60,7 +86,7 @@
       <div class="side-info-content">
         <div class="offset-widget offset-header">
           <div class="offset-logo">
-            <a href="index.html">RiverX</a>
+            <a href="#home">RiverX</a>
           </div>
           <button id="side-info-close" class="side-info-close">
             <i class="fas fa-times"></i>
@@ -68,7 +94,7 @@
         </div>
         <div class="mobile-menu d-xl-none fix"></div>
         <div class="offset-button">
-          <a href="contact.html" class="rr-btn hover-bg-theme">
+          <a href="#contact" class="rr-btn hover-bg-theme">
             <span class="btn-wrap">
               <span class="text-one">Let's Talk</span>
               <span class="text-two">Let's Talk</span>
@@ -104,80 +130,23 @@
       <div class="container large">
         <div class="header-area__inner">
           <div class="header__logo">
-            <a href="index.html">RiverX</a>
+            <a href="#home">RiverX</a>
           </div>
           <div class="header__nav">
             <nav class="main-menu">
               <ul>
-                <li class="menu-item-has-children">
-                  <a href="#">Home</a>
-                  <ul class="dp-menu col-2">
-                    <li><a href="digital-agency.html">Digital Agency</a></li>
-                    <li><a href="creative-agency.html">Creative Agency</a></li>
-                    <li><a href="marketing-agency.html">Marketing Agency</a></li>
-                    <li><a href="design-agency.html">Design Agency</a></li>
-                    <li><a href="web-development.html">Web Development</a></li>
-                    <li><a href="branding-agency.html">Branding Agency</a></li>
-                    <li><a href="startup-agency.html">Startup Agency</a></li>
-                    <li><a href="web-design.html">Web Design</a></li>
-                    <li><a href="modern-agency.html">Modern Agency</a></li>
-                    <li><a href="modern-agency-2.html">Modern Agency 2</a></li>
-                    <li><a href="modern-agency-3.html">Modern Agency 3</a></li>
-                    <li><a href="agency-portfolio.html">Agency Portfolio</a></li>
-                    <li><a href="agency-portfolio-2.html">Agency Portfolio 2</a></li>
-                    <li><a href="agency-portfolio-3.html">Agency Portfolio 3</a></li>
-                    <li><a href="it-solution.html">IT Solution</a></li>
-                    <li><a href="portfolio-horizontal.html">Portfolio Horizontal</a></li>
-                    <li><a href="portfolio-line-effect.html">Portfolio Line Effect</a></li>
-                    <li><a href="portfolio-box-effect.html">Portfolio Box Effect</a></li>
-                    <li><a href="portfolio-vertical.html">Portfolio Vertical</a></li>
-                    <li><a href="portfolio-slicer.html">Portfolio Slicer</a></li>
-                    <li><a href="parallax-carousal.html">Parallax Carousal</a></li>
-                    <li><a href="portfolio-showcase.html">Portfolio Showcase</a></li>
-                  </ul>
-                </li>
-                <li><a href="about.html">About Us</a></li>
-                <li class="menu-item-has-children">
-                  <a href="#">Service</a>
-                  <ul class="dp-menu">
-                    <li><a href="services.html">Core Services</a></li>
-                    <li><a href="services-2.html">Services ST. Pulse</a></li>
-                    <li><a href="services-3.html">Services ST. Morph</a></li>
-                    <li><a href="services-4.html">Services ST. Nova</a></li>
-                    <li><a href="services-5.html">Services ST. Zenith</a></li>
-                    <li><a href="services-6.html">Services ST. Prism</a></li>
-                    <li><a href="service-details.html">Service Details</a></li>
-                  </ul>
-                </li>
-                <li class="menu-item-has-children">
-                  <a href="#">Blog</a>
-                  <ul class="dp-menu">
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="blog-details.html">Blog Details</a></li>
-                  </ul>
-                </li>
-                <li class="menu-item-has-children">
-                  <a href="#">Pages</a>
-                  <ul class="dp-menu">
-                    <li><a href="portfolio.html">Core Portfolio</a></li>
-                    <li><a href="portfolio-2.html">Portfolio ST. Classic</a></li>
-                    <li><a href="portfolio-3.html">Portfolio ST. Minimal</a></li>
-                    <li><a href="portfolio-4.html">Portfolio ST. Modern</a></li>
-                    <li><a href="portfolio-5.html">Portfolio ST. Interactive</a></li>
-                    <li><a href="portfolio-6.html">Portfolio ST. Metro</a></li>
-                    <li><a href="portfolio-details.html">Portfolio Details</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="team-details.html">Team Details</a></li>
-                    <li><a href="faq.html">FAQ Page</a></li>
-                    <li><a href="404.html">404 Page</a></li>
-                  </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             </nav>
           </div>
           <div class="header__button">
-            <a href="contact.html" class="rr-btn hover-bg-theme">
+            <a href="#contact" class="rr-btn hover-bg-theme">
               <span class="btn-wrap">
                 <span class="text-one">Let’s Talk</span>
                 <span class="text-two">Let’s Talk</span>
@@ -202,7 +171,7 @@
       <main>
 
         <!-- hero area start  -->
-        <section class="hero-area">
+        <section class="hero-area" id="home">
           <div class="container large">
             <div class="hero-area-inner section-spacing-top">
               <div class="hero-content section-spacing-bottom">
@@ -264,7 +233,7 @@
         <!-- hero area end  -->
 
         <!-- about area start  -->
-        <section class="about-area ">
+        <section class="about-area " id="about">
           <div class="container large">
             <div class="about-area-inner section-spacing">
               <div class="section-content">
@@ -283,7 +252,7 @@
                     branding, web development, and creative strategy to help company</p>
                 </div>
                 <div class="btn-wrapper ">
-                  <a href="contact.html" class="rr-btn  btn-text-fli hover-bg-theme">
+                  <a href="#contact" class="rr-btn  btn-text-fli hover-bg-theme">
                     <span class="btn-wrap">
                       <span class="text-one">Learn More</span>
                       <span class="text-two">Learn More</span>
@@ -305,7 +274,7 @@
         <!-- video-box  end -->
 
         <!-- work area start  -->
-        <section class="work-area">
+        <section class="work-area" id="portfolio">
 
           <!-- text slider area start  -->
           <div class="text-slider-box fade-anim">
@@ -380,11 +349,11 @@
                   <div class="work-box">
                     <div class="thumb">
                       <div class="image scale" data-cursor-text="View Project">
-                        <a href="portfolio-details.html"><img src="assets/imgs/project/image-1.webp" alt="image"></a>
+                        <a href="#portfolio"><img src="assets/imgs/project/image-1.webp" alt="image"></a>
                       </div>
                     </div>
                     <div class="content">
-                      <h3 class="title"><a href="portfolio-details.html">Panda Automap</a></h3>
+                      <h3 class="title"><a href="#portfolio">Panda Automap</a></h3>
                       <div class="meta">
                         <span class="tag">Development</span>
                         <span class="date">2025</span>
@@ -395,11 +364,11 @@
                   <div class="work-box">
                     <div class="thumb">
                       <div class="image scale" data-cursor-text="View Project">
-                        <a href="portfolio-details.html"><img src="assets/imgs/project/image-2.webp" alt="image"></a>
+                        <a href="#portfolio"><img src="assets/imgs/project/image-2.webp" alt="image"></a>
                       </div>
                     </div>
                     <div class="content">
-                      <h3 class="title"><a href="portfolio-details.html">Saudi Venture Capital</a></h3>
+                      <h3 class="title"><a href="#portfolio">Saudi Venture Capital</a></h3>
                       <div class="meta">
                         <span class="tag">Graphics</span>
                         <span class="date">2025</span>
@@ -409,11 +378,11 @@
                   <div class="work-box">
                     <div class="thumb">
                       <div class="image scale" data-cursor-text="View Project">
-                        <a href="portfolio-details.html"><img src="assets/imgs/project/image-3.webp" alt="image"></a>
+                        <a href="#portfolio"><img src="assets/imgs/project/image-3.webp" alt="image"></a>
                       </div>
                     </div>
                     <div class="content">
-                      <h3 class="title"><a href="portfolio-details.html">Rebrand Lawberry</a></h3>
+                      <h3 class="title"><a href="#portfolio">Rebrand Lawberry</a></h3>
                       <div class="meta">
                         <span class="tag">Motion, Design</span>
                         <span class="date">2025</span>
@@ -423,11 +392,11 @@
                   <div class="work-box">
                     <div class="thumb">
                       <div class="image scale" data-cursor-text="View Project">
-                        <a href="portfolio-details.html"><img src="assets/imgs/project/image-4.webp" alt="image"></a>
+                        <a href="#portfolio"><img src="assets/imgs/project/image-4.webp" alt="image"></a>
                       </div>
                     </div>
                     <div class="content">
-                      <h3 class="title"><a href="portfolio-details.html">Selicon Cloud Cave</a></h3>
+                      <h3 class="title"><a href="#portfolio">Selicon Cloud Cave</a></h3>
                       <div class="meta">
                         <span class="tag">UI Design</span>
                         <span class="date">2025</span>
@@ -437,11 +406,11 @@
                   <div class="work-box">
                     <div class="thumb">
                       <div class="image scale" data-cursor-text="View Project">
-                        <a href="portfolio-details.html"><img src="assets/imgs/project/image-5.webp" alt="image"></a>
+                        <a href="#portfolio"><img src="assets/imgs/project/image-5.webp" alt="image"></a>
                       </div>
                     </div>
                     <div class="content">
-                      <h3 class="title"><a href="portfolio-details.html">Mountain Upwork</a></h3>
+                      <h3 class="title"><a href="#portfolio">Mountain Upwork</a></h3>
                       <div class="meta">
                         <span class="tag">Branding</span>
                         <span class="date">2025</span>
@@ -451,11 +420,11 @@
                   <div class="work-box">
                     <div class="thumb">
                       <div class="image scale" data-cursor-text="View Project">
-                        <a href="portfolio-details.html"><img src="assets/imgs/project/image-6.webp" alt="image"></a>
+                        <a href="#portfolio"><img src="assets/imgs/project/image-6.webp" alt="image"></a>
                       </div>
                     </div>
                     <div class="content">
-                      <h3 class="title"><a href="portfolio-details.html">Blacky Motorola</a></h3>
+                      <h3 class="title"><a href="#portfolio">Blacky Motorola</a></h3>
                       <div class="meta">
                         <span class="tag">UI Design</span>
                         <span class="date">2025</span>
@@ -465,7 +434,7 @@
                 </div>
               </div>
               <div class="all-btn-wrapper fade-anim">
-                <a href="portfolio.html" class="rr-btn btn-border hover-bg-theme">
+                <a href="#portfolio" class="rr-btn btn-border hover-bg-theme">
                   <span class="btn-wrap">
                     <span class="text-one">View All Work</span>
                     <span class="text-two">View All Work</span>
@@ -478,7 +447,7 @@
         <!-- work area end  -->
 
         <!-- service area start  -->
-        <section class="service-area">
+        <section class="service-area" id="services">
           <div class="container large">
             <div class="service-area-inner section-spacing">
               <div class="section-header">
@@ -497,13 +466,13 @@
                     </div>
 
                     <div class="content">
-                      <h3 class="title"><a href="service-details.html">Branding</a></h3>
+                      <h3 class="title"><a href="#services">Branding</a></h3>
                       <ul class="service-list">
-                        <li><a href="service-details.html">Creative Direction</a></li>
-                        <li><a href="service-details.html">Brand Identity</a></li>
-                        <li><a href="service-details.html">Branding Strategy</a></li>
-                        <li><a href="service-details.html">Graphic Design</a></li>
-                        <li><a href="service-details.html">Startup</a></li>
+                        <li><a href="#services">Creative Direction</a></li>
+                        <li><a href="#services">Brand Identity</a></li>
+                        <li><a href="#services">Branding Strategy</a></li>
+                        <li><a href="#services">Graphic Design</a></li>
+                        <li><a href="#services">Startup</a></li>
                       </ul>
                     </div>
                     <div class="thumb">
@@ -516,13 +485,13 @@
                     </div>
 
                     <div class="content">
-                      <h3 class="title"><a href="service-details.html">UI-UX Design</a></h3>
+                      <h3 class="title"><a href="#services">UI-UX Design</a></h3>
                       <ul class="service-list">
-                        <li><a href="service-details.html">UI UX Consulting</a></li>
-                        <li><a href="service-details.html">UX Research</a></li>
-                        <li><a href="service-details.html">Usability Testing</a></li>
-                        <li><a href="service-details.html">Wireframing</a></li>
-                        <li><a href="service-details.html">Prototyping</a></li>
+                        <li><a href="#services">UI UX Consulting</a></li>
+                        <li><a href="#services">UX Research</a></li>
+                        <li><a href="#services">Usability Testing</a></li>
+                        <li><a href="#services">Wireframing</a></li>
+                        <li><a href="#services">Prototyping</a></li>
                       </ul>
                     </div>
                     <div class="thumb">
@@ -535,13 +504,13 @@
                     </div>
 
                     <div class="content">
-                      <h3 class="title"><a href="service-details.html">Development</a></h3>
+                      <h3 class="title"><a href="#services">Development</a></h3>
                       <ul class="service-list">
-                        <li><a href="service-details.html">WordPress</a></li>
-                        <li><a href="service-details.html">Webflow</a></li>
-                        <li><a href="service-details.html">Laravel Framework</a></li>
-                        <li><a href="service-details.html">React & Flutter</a></li>
-                        <li><a href="service-details.html">Design System</a></li>
+                        <li><a href="#services">WordPress</a></li>
+                        <li><a href="#services">Webflow</a></li>
+                        <li><a href="#services">Laravel Framework</a></li>
+                        <li><a href="#services">React & Flutter</a></li>
+                        <li><a href="#services">Design System</a></li>
                       </ul>
                     </div>
                     <div class="thumb">
@@ -554,13 +523,13 @@
                     </div>
 
                     <div class="content">
-                      <h3 class="title"><a href="service-details.html">Digital Marketing</a></h3>
+                      <h3 class="title"><a href="#services">Digital Marketing</a></h3>
                       <ul class="service-list">
-                        <li><a href="service-details.html">Online Marketing</a></li>
-                        <li><a href="service-details.html">SEO-Marketing</a></li>
-                        <li><a href="service-details.html">Strategy</a></li>
-                        <li><a href="service-details.html">Market Research</a></li>
-                        <li><a href="service-details.html">Social Reform</a></li>
+                        <li><a href="#services">Online Marketing</a></li>
+                        <li><a href="#services">SEO-Marketing</a></li>
+                        <li><a href="#services">Strategy</a></li>
+                        <li><a href="#services">Market Research</a></li>
+                        <li><a href="#services">Social Reform</a></li>
                       </ul>
                     </div>
                     <div class="thumb">
@@ -623,7 +592,7 @@
         <!-- funfact area end  -->
 
         <!-- client area start  -->
-        <section class="client-area">
+        <section class="client-area" id="team">
           <div class="container large">
             <div class="client-area-inner section-spacing-top">
               <div class="section-content">
@@ -739,14 +708,14 @@
 
         <!-- cta area start  -->
         <div class="p-relative overflow-hidden">
-          <section class="cta-area">
+          <section class="cta-area" id="contact">
             <div class="cta-area-inner section-spacing">
               <div class="area-bg"></div>
               <div class="container large">
                 <div class="section-content">
                   <div class="section-title-wrapper">
                     <div class="title-wrapper">
-                      <h2 class="section-title font-instrumentsans-medium char-anim"><a href="contact.html">Let’s
+                      <h2 class="section-title font-instrumentsans-medium char-anim"><a href="#contact">Let’s
                           Work</a></h2>
                     </div>
                   </div>
@@ -758,7 +727,7 @@
         <!-- cta area end  -->
 
         <!-- productivity area start  -->
-        <section class="productivity-area">
+        <section class="productivity-area" id="blog">
           <div class="container large">
             <div class="productivity-area-inner section-spacing">
               <div class="section-content">
@@ -789,7 +758,7 @@
         <div class="container large">
           <div class="footer-top-inner">
             <div class="footer-logo">
-              <a href="index.html">RiverX</a>
+              <a href="#home">RiverX</a>
             </div>
             <div class="info-text">
               <div class="text-wrapper">
@@ -816,7 +785,7 @@
                 <div class="subscription-text">
                   <div class="text-wrapper">
                     <p class="text">By subscribing you agree with our
-                      <a href="contact.html">Privacy Policy</a>
+                      <a href="#contact">Privacy Policy</a>
                     </p>
                   </div>
                 </div>
@@ -824,31 +793,31 @@
               <div class="footer-widget-box">
                 <h2 class="title">Company</h2>
                 <ul class="footer-nav-list">
-                  <li><a href="contact.html">agency</a></li>
-                  <li><a href="contact.html">Solutions</a></li>
-                  <li><a href="contact.html">Community</a></li>
-                  <li><a href="contact.html">Work</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="#about">agency</a></li>
+                  <li><a href="#services">Solutions</a></li>
+                  <li><a href="#team">Community</a></li>
+                  <li><a href="#portfolio">Work</a></li>
+                  <li><a href="#contact">Contact</a></li>
                 </ul>
               </div>
               <div class="footer-widget-box">
                 <h2 class="title">Social</h2>
                 <ul class="footer-nav-list">
-                  <li><a href="contact.html">Facebook</a></li>
-                  <li><a href="contact.html">Twitter</a></li>
-                  <li><a href="contact.html">Dribbble</a></li>
-                  <li><a href="contact.html">Instagram</a></li>
-                  <li><a href="contact.html">Awwwards</a></li>
-                  <li><a href="contact.html">YouTube</a></li>
+                  <li><a href="#contact">Facebook</a></li>
+                  <li><a href="#contact">Twitter</a></li>
+                  <li><a href="#contact">Dribbble</a></li>
+                  <li><a href="#contact">Instagram</a></li>
+                  <li><a href="#contact">Awwwards</a></li>
+                  <li><a href="#contact">YouTube</a></li>
                 </ul>
               </div>
               <div class="footer-widget-box">
                 <h2 class="title">Office</h2>
                 <ul class="footer-nav-list">
-                  <li><a href="contact.html">New York</a></li>
-                  <li><a href="contact.html">Toronto</a></li>
-                  <li><a href="contact.html">Berlin</a></li>
-                  <li><a href="contact.html">London</a></li>
+                  <li><a href="#contact">New York</a></li>
+                  <li><a href="#contact">Toronto</a></li>
+                  <li><a href="#contact">Berlin</a></li>
+                  <li><a href="#contact">London</a></li>
                 </ul>
               </div>
             </div>
