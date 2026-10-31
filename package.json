@@ -6,7 +6,8 @@
   "packageManager": "pnpm@10.26.2",
   "scripts": {
     "dev": "vite --host 0.0.0.0 --strictPort",
-    "build": "vite build",
+    "build": "node scripts/build.js",
+    "verify:assets": "node scripts/verify-assets.js",
     "preview": "vite preview --host 0.0.0.0 --strictPort",
     "verify:dev-runtime": "node scripts/verify-dev-runtime.js"
   },

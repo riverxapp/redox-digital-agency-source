@@ -72,93 +72,17 @@ work page css
 /*----------------------------------------*/
 /* typography css  */
 /*----------------------------------------*/
-/* dm sans  */
-/* instrument sans  */
-/* Thunder  */
-@font-face {
-  font-family: "Thunder";
-  src: url("../fonts/Thunder-BoldLC.ttf");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Thunder";
-  src: url("../fonts/Thunder-SemiBoldLC.ttf");
-  font-weight: 600;
-}
-@font-face {
-  font-family: "Thunder";
-  src: url("../fonts/Thunder-LC.ttf");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Thunder";
-  src: url("../fonts/Thunder-MediumLC.ttf");
-  font-weight: 500;
-}
-/* Sequel Sans  */
-@font-face {
-  font-family: "Sequel Sans Roman Body";
-  src: url("../fonts/Sequel Sans Roman Body.otf");
-  font-weight: 310;
-}
-@font-face {
-  font-family: "Sequel Sans Medium Body";
-  src: url("../fonts/Sequel Sans Medium Body.otf");
-  font-weight: 315;
-}
-/* times now  */
-@font-face {
-  font-family: "TimesNow-SemiLightItalic";
-  src: url("../fonts/TimesNow-SemiLightItalic.ttf");
-  font-weight: 400;
-}
-/* bdo grotesk  */
-@font-face {
-  font-family: "BDOGrotesk-Regular";
-  src: url("../fonts/BDOGrotesk-Regular.ttf");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "BDOGrotesk-Regular";
-  src: url("../fonts/BDOGrotesk-Medium.ttf");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "BDOGrotesk-Regular";
-  src: url("../fonts/BDOGrotesk-DemiBold.ttf");
-  font-weight: 600;
-}
-/* tartufffo trial */
-@font-face {
-  font-family: "Tartuffo_Trial";
-  src: url("../fonts/Tartuffo_Trial-Thin.otf");
-  font-weight: 100;
-}
-@font-face {
-  font-family: "Tartuffo_Trial";
-  src: url("../fonts/Tartuffo_Trial-LightItalic.otf");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Tartuffo_Trial";
-  src: url("../fonts/Tartuffo_Trial-Light.otf");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "tartuffo-font-family-family";
-  src: url("../fonts/Tartuffo_Trial-MediumItalic.otf");
-  font-weight: 500;
-}
+/* Custom font files are not bundled; use the loaded web fonts and system fallbacks. */
 :root {
   --font_dmsans: "DM Sans", sans-serif;
   --font_instrumentsans: "Instrument Sans", sans-serif;
-  --font_thunder: "Thunder";
-  --font_sequelsansromanbody: "Sequel Sans Roman Body";
-  --font_sequelsansmediumbody: "Sequel Sans Medium Body";
-  --font_timesnow: "TimesNow-SemiLightItalic";
-  --font_bdogrotesk: "BDOGrotesk-Regular";
-  --font_tartuffo: "tartuffo-font-family";
-  --font_tartuffotrial: "Tartuffo_Trial";
+  --font_thunder: "Instrument Sans", sans-serif;
+  --font_sequelsansromanbody: "DM Sans", sans-serif;
+  --font_sequelsansmediumbody: "DM Sans", sans-serif;
+  --font_timesnow: Georgia, serif;
+  --font_bdogrotesk: "Instrument Sans", sans-serif;
+  --font_tartuffo: Georgia, serif;
+  --font_tartuffotrial: Georgia, serif;
   --font_awesome: "Font Awesome 6 Free";
 }
 
@@ -460,7 +384,7 @@ h6 {
   height: 100vh;
   background-repeat: repeat;
   background-position: top left;
-  background-image: url(../imgs/writer/body-bg.webp);
+  background-image: none;
 }
 
 .container-xl {
@@ -743,7 +667,7 @@ h6 {
   content: "";
   position: absolute;
   inset-inline-start: 0;
-  background-image: url("../imgs/electrician/check-mark.webp");
+  background-image: none;
   background-repeat: no-repeat;
   width: 14px;
   height: 14px;
@@ -802,7 +726,7 @@ h6 {
   align-items: center;
 }
 .pagination-with-dash .swiper-pagination-current:before {
-  content: url(../imgs/icon/arrow-left.webp);
+  content: none;
 }
 .pagination-with-dash .swiper-pagination-total {
   display: flex;
@@ -810,7 +734,7 @@ h6 {
   align-items: center;
 }
 .pagination-with-dash .swiper-pagination-total:after {
-  content: url(../imgs/icon/arrow-right.webp);
+  content: none;
 }
 
 .t__toggle_switcher .slide-toggle-wrapper {
@@ -1902,7 +1826,7 @@ section {
   cursor: pointer;
   text-align: left;
   color: var(--white);
-  background-image: url(../imgs/writer/go-top.webp);
+  background-image: none;
   background-position: right center;
   background-repeat: no-repeat;
   right: 16%;
@@ -1995,7 +1919,7 @@ section {
 .light.go-top-writer {
   color: var(--black);
   background-color: transparent;
-  background-image: url(../imgs/writer/go-top-light.webp);
+  background-image: none;
 }
 .light.progress-wrap {
   margin: 0;
@@ -4866,7 +4790,7 @@ video.video-area {
   content: "";
   width: 150px;
   aspect-ratio: 100/100;
-  background-image: url(../imgs/shape/shape-5.webp);
+  background-image: none;
   background-size: contain;
   position: absolute;
   top: -141px;
@@ -4904,7 +4828,7 @@ video.video-area {
   content: "";
   width: 150px;
   aspect-ratio: 100/100;
-  background-image: url(../imgs/shape/shape-4.webp);
+  background-image: none;
   background-size: contain;
   position: absolute;
   top: 21px;
@@ -4942,7 +4866,7 @@ video.video-area {
   content: "";
   width: 150px;
   aspect-ratio: 100/100;
-  background-image: url(../imgs/shape/shape-6.webp);
+  background-image: none;
   background-size: contain;
   position: absolute;
   bottom: -177px;
@@ -19429,7 +19353,7 @@ video.video-area {
   }
 }
 .dark .hero-content-3 .title span:before {
-  background-image: url(../../assets/imgs/web-development/hero-shape-4.png);
+  background-image: none;
 }
 .hero-content-3 p {
   font-size: 22px;
@@ -20716,7 +20640,7 @@ START: Team CSS
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../imgs/web-development/team-bg.png");
+  background-image: none;
   width: 100%;
   height: 100%;
 }
@@ -22101,7 +22025,7 @@ START: Footer CSS
   }
 }
 .web-hero-content .hero-btn {
-  background-image: url(../imgs/web-design/hero-btn-bg.webp);
+  background-image: none;
   color: var(--rr-color-common-white);
   font-size: 60px;
   height: 180px;
@@ -23887,7 +23811,7 @@ START: Footer CSS
 }
 .brand-wrap .brand-img-wrap {
   background-color: var(--rr-color-bg-1);
-  mask-image: url(../imgs/modern-agency-2/mask-img-1.webp);
+  mask-image: none;
   mask-repeat: no-repeat;
   mask-size: cover;
   height: 100%;
@@ -24555,7 +24479,7 @@ START: Footer CSS
   }
 }
 .it-hero-content .hero-btn {
-  background-image: url(../img/bg-img/hero-btn-bg.png);
+  background-image: none;
   color: var(--rr-color-common-white);
   font-size: 60px;
   height: 180px;
